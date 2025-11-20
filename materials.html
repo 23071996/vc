@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Mechanical Engineering Student Hub - Study Materials</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Study materials, notes, reference websites, and YouTube links for Mechanical Engineering diploma students." />
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="assets/script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <span class="brand-title">Mechanical Engineering Student Hub</span>
+                <span class="brand-subtitle">by Mr. Chidambaram V, M.E. | Diploma Students</span>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html">Home</a>
+                <a href="notifications.html">Notifications</a>
+                <a href="assignments.html">Assignments</a>
+                <a href="materials.html" class="active">Study Materials</a>
+                <a href="syllabus.html">Syllabus</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="section">
+            <div class="container">
+                <h1 class="section-title">Study Materials</h1>
+                <p class="section-subtitle">
+                    Select a subject on the left side to view its notes, reference websites, and YouTube links
+                    on the right side. This layout is designed so students can quickly switch between subjects.
+                </p>
+
+                <!--
+                    HOW TO UPDATE STUDY MATERIALS:
+                    --------------------------------
+                    1. Subjects are listed as buttons on the left side.
+                    2. Each subject has a matching content block on the right side.
+                    3. To change subject names, edit the button text and the heading inside the matching panel.
+                    4. To update links, edit the lists inside each .materials-panel.
+                    5. To add a new subject:
+                       - Duplicate one <button class="materials-subject-btn"> on the left.
+                       - Give it a new data-subject value (e.g., data-subject="cad").
+                       - Copy one <div class="materials-panel">, change its data-subject to "cad",
+                         and then fill in the links for that subject.
+                -->
+
+                <div class="materials-layout">
+                    <!-- Left side: Subjects list (1/4 width) -->
+                    <aside class="materials-sidebar">
+                        <h2 class="materials-sidebar-title">Subjects</h2>
+                        <button class="materials-subject-btn active" data-subject="thermo">Thermodynamics</button>
+                        <button class="materials-subject-btn" data-subject="som">Strength of Materials</button>
+                        <button class="materials-subject-btn" data-subject="mft">Manufacturing Technology</button>
+                        <button class="materials-subject-btn" data-subject="fm">Fluid Mechanics</button>
+                    </aside>
+
+                    <!-- Right side: Subject details (3/4 width) -->
+                    <section class="materials-content">
+                        <!-- Thermodynamics Panel -->
+                        <div class="materials-panel active" data-subject="thermo">
+                            <h2>Thermodynamics</h2>
+                            <div class="materials-columns">
+                                <div class="materials-column">
+                                    <h3>PDF Notes</h3>
+                                    <ul>
+                                        <li><a href="#" target="_blank">Thermodynamics - Unit I Basics (PDF)</a></li>
+                                        <li><a href="#" target="_blank">First Law of Thermodynamics Notes (PDF)</a></li>
+                                    </ul>
+                                </div>
+                                <div class="materials-column">
+                                    <h3>Reference Websites</h3>
+                                    <ul>
+                                        <li><a href="#" target="_blank">Introduction to Thermodynamics - Online Resource</a></li>
+                                        <li><a href="#" target="_blank">Engineering Thermodynamics Concepts</a></li>
+                                    </ul>
+                                </div>
+                                <div class="materials-column">
+                                    <h3>YouTube Videos</h3>
+                                    <ul>
+                                        <li><a href="#" target="_blank">Thermodynamics Basics Lecture</a></li>
+                                        <li><a href="#" target="_blank">Carnot Cycle Explained</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Strength of Materials Panel -->
+                        <div class="materials-panel" data-subject="som">
+                            <h2>Strength of Materials</h2>
+                            <div class="materials-columns">
+                                <div class="materials-column">
+                                    <h3>PDF Notes</h3>
+                                    <ul>
+                                        <li><a href="#" target="_blank">Stress and Strain Notes (PDF)</a></li>
+                                        <li><a href="#" target="_blank">Shear Force and Bending Moment (PDF)</a></li>
+                                    </ul>
+                                </div>
+                                <div class="materials-column">
+                                    <h3>Reference Websites</h3>
+                                    <ul>
+                                        <li><a href="#" target="_blank">Strength of Materials - Theory and Examples</a></li>
+                                    </ul>
+                                </div>
+                                <div class="materials-column">
+                                    <h3>YouTube Videos</h3>
+                                    <ul>
+                                        <li><a href="#" target="_blank">Stress-Strain Curve Explained</a></li>
+                                        <li><a href="#" target="_blank">SFD and BMD Problems</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Manufacturing Technology Panel -->
+                        <div class="materials-panel" data-subject="mft">
+                            <h2>Manufacturing Technology</h2>
+                            <div class="materials-columns">
+                                <div class="materials-column">
+                                    <h3>PDF Notes</h3>
+                                    <ul>
+                                        <li><a href="#" target="_blank">Casting Processes Notes (PDF)</a></li>
+                                        <li><a href="#" target="_blank">Welding Processes Notes (PDF)</a></li>
+                                    </ul>
+                                </div>
+                                <div class="materials-column">
+                                    <h3>Reference Websites</h3>
+                                    <ul>
+                                        <li><a href="#" target="_blank">Manufacturing Processes Tutorials</a></li>
+                                    </ul>
+                                </div>
+                                <div class="materials-column">
+                                    <h3>YouTube Videos</h3>
+                                    <ul>
+                                        <li><a href="#" target="_blank">Casting Process Overview</a></li>
+                                        <li><a href="#" target="_blank">Welding Basics for Beginners</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Fluid Mechanics Panel -->
+                        <div class="materials-panel" data-subject="fm">
+                            <h2>Fluid Mechanics</h2>
+                            <div class="materials-columns">
+                                <div class="materials-column">
+                                    <h3>PDF Notes</h3>
+                                    <ul>
+                                        <li><a href="#" target="_blank">Fluid Properties Notes (PDF)</a></li>
+                                        <li><a href="#" target="_blank">Bernoulli's Equation and Applications (PDF)</a></li>
+                                    </ul>
+                                </div>
+                                <div class="materials-column">
+                                    <h3>Reference Websites</h3>
+                                    <ul>
+                                        <li><a href="#" target="_blank">Fluid Mechanics Fundamentals</a></li>
+                                    </ul>
+                                </div>
+                                <div class="materials-column">
+                                    <h3>YouTube Videos</h3>
+                                    <ul>
+                                        <li><a href="#" target="_blank">Introduction to Fluid Mechanics</a></li>
+                                        <li><a href="#" target="_blank">Venturi Meter Working Principle</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <!-- Motivation Banner -->
+        <section class="section">
+            <div class="container">
+                <div class="motivation-banner">
+                    <h2>Study Smart, Not Just Hard</h2>
+                    <p class="motivation-line">
+                        “Right material + right practice + right guidance = strong engineer.”
+                    </p>
+                    <p class="motivation-small">
+                        Use these materials to build concepts, then apply them in labs, projects, and interviews.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="currentYear"></span> Mechanical Engineering Student Hub. All rights reserved.</p>
+            <p class="footer-note">
+                Maintained by <strong>Mr. Chidambaram V, M.E., Mechanical Engineering Faculty</strong>.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

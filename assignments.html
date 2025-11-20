@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Mechanical Engineering Student Hub - Assignments</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Assignment topics and details for Mechanical Engineering diploma students." />
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="assets/script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <span class="brand-title">Mechanical Engineering Student Hub</span>
+                <span class="brand-subtitle">by Mr. Chidambaram V, M.E. | Diploma Students</span>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html">Home</a>
+                <a href="notifications.html">Notifications</a>
+                <a href="assignments.html" class="active">Assignments</a>
+                <a href="materials.html">Study Materials</a>
+                <a href="syllabus.html">Syllabus</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="section">
+            <div class="container">
+                <h1 class="section-title">Assignments</h1>
+                <p class="section-subtitle">
+                    All current assignments are listed in a simple, easy-to-read format.
+                    Focus on the subject, topic, and due date first, then read the key points.
+                </p>
+
+                <!--
+                    HOW TO UPDATE ASSIGNMENTS:
+                    --------------------------
+                    1. Each assignment is inside a <article class="assignment-card assignment-simple"> block.
+                    2. Edit SUBJECT, TOPIC, DUE DATE, and the bullet points under Description and Instructions.
+                    3. To add a new assignment, copy one entire <article> and paste below, then change the details.
+                -->
+
+                <div class="assignment-list">
+                    <article class="assignment-card assignment-simple">
+                        <header class="assignment-header">
+                            <div>
+                                <span class="badge-subject">Thermodynamics</span>
+                                <h2>Carnot Cycle and Its Applications</h2>
+                            </div>
+                            <div class="assignment-meta">
+                                <span class="badge-due">Due: 27 November 2025</span>
+                            </div>
+                        </header>
+                        <div class="assignment-body">
+                            <div class="assignment-column">
+                                <h3>Description</h3>
+                                <ul>
+                                    <li>Explain the Carnot cycle with neat labelled sketches.</li>
+                                    <li>Derive the efficiency equation of a Carnot engine.</li>
+                                    <li>Mention at least two practical applications in modern thermal power plants.</li>
+                                </ul>
+                            </div>
+                            <div class="assignment-column">
+                                <h3>Instructions</h3>
+                                <ul>
+                                    <li>Handwritten report, 6–8 pages.</li>
+                                    <li>Use proper headings and neat diagrams.</li>
+                                    <li>Submit during the Thermodynamics class.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="assignment-card assignment-simple">
+                        <header class="assignment-header">
+                            <div>
+                                <span class="badge-subject">Strength of Materials</span>
+                                <h2>Shear Force and Bending Moment Diagrams</h2>
+                            </div>
+                            <div class="assignment-meta">
+                                <span class="badge-due">Due: 25 November 2025</span>
+                            </div>
+                        </header>
+                        <div class="assignment-body">
+                            <div class="assignment-column">
+                                <h3>Description</h3>
+                                <ul>
+                                    <li>For the given beams (problem sheet provided in class),</li>
+                                    <li>Calculate reactions at supports.</li>
+                                    <li>Draw the shear force and bending moment diagrams.</li>
+                                    <li>Mark all maximum and minimum values clearly.</li>
+                                </ul>
+                            </div>
+                            <div class="assignment-column">
+                                <h3>Instructions</h3>
+                                <ul>
+                                    <li>Use graph sheets for diagrams.</li>
+                                    <li>Show all intermediate calculations clearly.</li>
+                                    <li>Submit as a separate assignment record.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="assignment-card assignment-simple">
+                        <header class="assignment-header">
+                            <div>
+                                <span class="badge-subject">Manufacturing Technology</span>
+                                <h2>Comparison of Casting and Welding Processes</h2>
+                            </div>
+                            <div class="assignment-meta">
+                                <span class="badge-due">Due: 29 November 2025</span>
+                            </div>
+                        </header>
+                        <div class="assignment-body">
+                            <div class="assignment-column">
+                                <h3>Description</h3>
+                                <ul>
+                                    <li>Compare casting and welding processes based on:</li>
+                                    <li>Principle and basic steps involved.</li>
+                                    <li>Equipment used and typical applications.</li>
+                                    <li>Advantages and limitations of each process.</li>
+                                </ul>
+                            </div>
+                            <div class="assignment-column">
+                                <h3>Instructions</h3>
+                                <ul>
+                                    <li>Typed or handwritten, 4–6 pages.</li>
+                                    <li>You may include relevant images or diagrams with captions.</li>
+                                    <li>Use clear headings and tables wherever useful.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="assignment-card assignment-simple">
+                        <header class="assignment-header">
+                            <div>
+                                <span class="badge-subject">Fluid Mechanics</span>
+                                <h2>Bernoulli's Equation and Its Practical Applications</h2>
+                            </div>
+                            <div class="assignment-meta">
+                                <span class="badge-due">Due: 30 November 2025</span>
+                            </div>
+                        </header>
+                        <div class="assignment-body">
+                            <div class="assignment-column">
+                                <h3>Description</h3>
+                                <ul>
+                                    <li>Derive Bernoulli's equation from basic principles.</li>
+                                    <li>Explain working of:
+                                        <ul>
+                                            <li>Venturi meter</li>
+                                            <li>Pitot tube</li>
+                                            <li>Orifice meter (any one more example)</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="assignment-column">
+                                <h3>Instructions</h3>
+                                <ul>
+                                    <li>Use your own words; avoid direct textbook copying.</li>
+                                    <li>Diagrams must be neat and labelled.</li>
+                                    <li>Submit on or before due date in Fluid Mechanics class.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Motivation Banner -->
+        <section class="section">
+            <div class="container">
+                <div class="motivation-banner">
+                    <h2>Assignments = Practice for Real Industry Problems</h2>
+                    <p class="motivation-line">
+                        “Don’t do assignments just to submit them. Do them to become a confident engineer.”
+                    </p>
+                    <p class="motivation-small">
+                        Try to relate every question to a real machine, workshop process, or lab experiment.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="currentYear"></span> Mechanical Engineering Student Hub. All rights reserved.</p>
+            <p class="footer-note">
+                Maintained by <strong>Mr. Chidambaram V, M.E., Mechanical Engineering Faculty</strong>.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

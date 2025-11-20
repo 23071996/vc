@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Mechanical Engineering Student Hub - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Central hub for Mechanical Engineering diploma students handled by Mr. Chidambaram V, M.E." />
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="assets/script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <span class="brand-title">Mechanical Engineering Student Hub</span>
+                <span class="brand-subtitle">by Mr. Chidambaram V, M.E. | Diploma Students</span>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html" class="active">Home</a>
+                <a href="notifications.html">Notifications</a>
+                <a href="assignments.html">Assignments</a>
+                <a href="materials.html">Study Materials</a>
+                <a href="syllabus.html">Syllabus</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Scrolling Latest Notification Ticker -->
+        <section class="ticker-section">
+            <div class="container">
+                <!--
+                    HOW TO CHANGE THE SCROLLING LATEST NOTIFICATIONS:
+                    -------------------------------------------------
+                    1. Open assets/script.js.
+                    2. Search for 'latestNotifications'.
+                    3. Edit the text messages in that array.
+                    4. Save the file and reload this page.
+
+                    HOW TO CHANGE SCROLL SPEED:
+                    ---------------------------
+                    1. In assets/script.js, search for 'TICKER_SPEED_SECONDS'.
+                    2. Change the number (e.g., 15, 20, 30).
+                -->
+                <div class="ticker-wrapper">
+                    <div class="ticker-label">Latest Notification</div>
+                    <div class="ticker">
+                        <div class="ticker-content" id="tickerContent">
+                            <!-- Filled dynamically by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <h1>Welcome, Diploma Mechanical Engineering Students!</h1>
+                    <p class="slogan">Strong Basics, Strong Future – Learn, Build, Achieve.</p>
+                    <p>
+                        I am <strong>Mr. Chidambaram V, M.E., Mechanical Engineering Faculty</strong>.
+                        This website is created exclusively for my diploma students as a single platform to
+                        access assignments, notifications, study materials, syllabus, and daily updates.
+                    </p>
+                    <p>
+                        Please bookmark this page and visit it regularly to stay updated with all academic activities.
+                    </p>
+                </div>
+                <div class="hero-highlight poster-card">
+                    <h2>MECH Motivation Poster</h2>
+                    <p class="poster-quote">
+                        “Engineers don’t just solve problems, they build the future.”
+                    </p>
+                    <p class="poster-sub">
+                        Every drawing, every calculation, every lab – it all counts. Keep moving forward.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Links Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Quick Access</h2>
+                <div class="card-grid">
+                    <a href="notifications.html" class="card card-link">
+                        <h3>Notifications &amp; Announcements</h3>
+                        <p>Important updates about exams, timetable changes, and lab schedules.</p>
+                    </a>
+                    <a href="assignments.html" class="card card-link">
+                        <h3>Assignments</h3>
+                        <p>Check assignment topics, due dates, and special instructions in a clear format.</p>
+                    </a>
+                    <a href="materials.html" class="card card-link">
+                        <h3>Study Materials</h3>
+                        <p>Access notes, reference websites, and YouTube lecture links.</p>
+                    </a>
+                    <a href="syllabus.html" class="card card-link">
+                        <h3>Syllabus</h3>
+                        <p>View syllabus outlines for each semester and subject.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Daily Important News / Updates Section -->
+        <section class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Daily Important News &amp; Updates</h2>
+                <p class="section-subtitle">
+                    Share daily or weekly news related to Mechanical Engineering,
+                    technology, innovation, and career/placement opportunities.
+                </p>
+
+                <div class="news-list">
+                    <article class="news-item">
+                        <h3>GATE &amp; Higher Studies Guidance Session</h3>
+                        <p class="news-meta">Date: 20 November 2025 | Category: Career &amp; Higher Studies</p>
+                        <p>
+                            A guidance session on GATE preparation and opportunities for higher studies in
+                            Mechanical Engineering will be conducted next week. Details will be shared in the
+                            Notifications page.
+                        </p>
+                    </article>
+
+                    <article class="news-item">
+                        <h3>Latest Advancements in Electric Vehicles</h3>
+                        <p class="news-meta">Date: 19 November 2025 | Category: Technology &amp; Innovation</p>
+                        <p>
+                            Read about the latest innovations in electric vehicle powertrains and battery
+                            management systems. Students are encouraged to explore research papers and articles
+                            related to EV design and manufacturing.
+                        </p>
+                    </article>
+
+                    <article class="news-item">
+                        <h3>Placement Tips for Mechanical Engineering Students</h3>
+                        <p class="news-meta">Date: 18 November 2025 | Category: Placements</p>
+                        <p>
+                            Focus on strengthening fundamentals in subjects like Strength of Materials,
+                            Thermodynamics, Manufacturing Technology, and Design. Practice aptitude, attend mock
+                            interviews, and update your resume regularly.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Motivation Banner Section -->
+        <section class="section">
+            <div class="container">
+                <div class="motivation-banner">
+                    <h2>Daily Motivation for Diploma Mechanical Students</h2>
+                    <p class="motivation-line">
+                        “Small consistent efforts today become big career opportunities tomorrow.”
+                    </p>
+                    <p class="motivation-small">
+                        Solve at least one extra problem, learn one extra concept, and ask one good question every day.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer: Common across pages -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="currentYear"></span> Mechanical Engineering Student Hub. All rights reserved.</p>
+            <p class="footer-note">
+                Maintained by <strong>Mr. Chidambaram V, M.E., Mechanical Engineering Faculty</strong>.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

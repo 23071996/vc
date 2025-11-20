@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Mechanical Engineering Student Hub - Admin Area (Hidden)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Hidden admin area to enter and manage students' marks." />
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="assets/script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <span class="brand-title">Mechanical Engineering Student Hub</span>
+                <span class="brand-subtitle">by Mr. Chidambaram V, M.E. | Admin Area | For Faculty Use Only</span>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html">Home</a>
+                <a href="notifications.html">Notifications</a>
+                <a href="assignments.html">Assignments</a>
+                <a href="materials.html">Study Materials</a>
+                <a href="syllabus.html">Syllabus</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <!-- Login Section -->
+        <section class="section" id="loginSection">
+            <div class="container">
+                <h1 class="section-title">Admin Login (Page Hidden from Menu)</h1>
+                <p class="section-subtitle">
+                    This admin page is not linked in the main navigation, but you can open it directly.
+                    Use it only on your personal system for entering and testing marks.
+                </p>
+
+                <div class="card login-card">
+                    <form id="adminLoginForm">
+                        <label for="adminPassword">Enter Admin Password</label>
+                        <input type="password" id="adminPassword" required placeholder="Password" />
+                        <button type="submit" class="btn-primary">Login</button>
+                        <p class="info-note">
+                            Note: Login is for basic protection only and runs in the browser.
+                            For high security (college-wide system), a server-based login is required.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Admin Panel Section (hidden until login success) -->
+        <section class="section hidden" id="adminPanel">
+            <div class="container">
+                <h1 class="section-title">Marks Management Panel</h1>
+                <p class="section-subtitle">
+                    Use this panel to enter or update students' marks for tests and exams.
+                    Saved marks will appear automatically on the <strong>Students' Marks</strong> page.
+                </p>
+
+                <div class="admin-grid">
+                    <!-- Marks Entry Form -->
+                    <div class="card admin-card">
+                        <h2>Enter / Add Student Marks</h2>
+                        <form id="marksEntryForm" class="admin-form">
+                            <div class="form-row">
+                                <label for="markStudentName">Student Name</label>
+                                <input type="text" id="markStudentName" required placeholder="e.g., Arun Kumar" />
+                            </div>
+                            <div class="form-row">
+                                <label for="markRollNo">Roll Number</label>
+                                <input type="text" id="markRollNo" required placeholder="e.g., ME2301" />
+                            </div>
+                            <div class="form-row">
+                                <label for="markSubject">Subject</label>
+                                <input type="text" id="markSubject" required placeholder="e.g., Thermodynamics" />
+                            </div>
+                            <div class="form-row two-col">
+                                <div>
+                                    <label for="markInternal">Internal Marks (30)</label>
+                                    <input type="number" id="markInternal" min="0" max="30" required placeholder="e.g., 24" />
+                                </div>
+                                <div>
+                                    <label for="markExam">Exam Marks (70)</label>
+                                    <input type="number" id="markExam" min="0" max="70" required placeholder="e.g., 62" />
+                                </div>
+                            </div>
+                            <button type="submit" class="btn-primary">Save Marks</button>
+                            <p class="info-note">
+                                Tip: You can keep adding multiple students one by one.
+                                Data is stored locally in this browser (localStorage).
+                            </p>
+                        </form>
+                    </div>
+
+                    <!-- Current Marks Preview -->
+                    <div class="card admin-card">
+                        <h2>Current Marks Summary</h2>
+                        <p class="info-note">
+                            This is the same data shown on the <strong>Students' Marks</strong> page.
+                            Review after each set of entries.
+                        </p>
+                        <div id="adminMarksList">
+                            <!-- Filled by JavaScript -->
+                        </div>
+                        <button id="resetMarksBtn" class="btn-danger">
+                            Clear All Marks &amp; Restore Sample Data
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="currentYear"></span> Mechanical Engineering Student Hub. All rights reserved.</p>
+            <p class="footer-note">
+                Maintained by <strong>Mr. Chidambaram V, M.E., Mechanical Engineering Faculty</strong>.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

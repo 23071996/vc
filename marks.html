@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Mechanical Engineering Student Hub - Students' Marks (Hidden)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Internal and exam marks page (currently hidden from main navigation)." />
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="assets/script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <span class="brand-title">Mechanical Engineering Student Hub</span>
+                <span class="brand-subtitle">by Mr. Chidambaram V, M.E. | Diploma Students (Hidden Marks Page)</span>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html">Home</a>
+                <a href="notifications.html">Notifications</a>
+                <a href="assignments.html">Assignments</a>
+                <a href="materials.html">Study Materials</a>
+                <a href="syllabus.html">Syllabus</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="section">
+            <div class="container">
+                <h1 class="section-title">Students' Marks (Currently Hidden)</h1>
+                <p class="section-subtitle">
+                    This page is not linked in the main menu. You can still open it directly for testing.
+                    When you are ready to show marks to students, add a "Students' Marks" link in the navigation bar.
+                </p>
+
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>S.No</th>
+                                <th>Student Name</th>
+                                <th>Roll No</th>
+                                <th>Subject</th>
+                                <th>Internal Marks (30)</th>
+                                <th>Exam Marks (70)</th>
+                                <th>Total (100)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="marksTableBody">
+                            <!-- Rows will be filled by JavaScript from localStorage or sample data -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="currentYear"></span> Mechanical Engineering Student Hub. All rights reserved.</p>
+            <p class="footer-note">
+                Maintained by <strong>Mr. Chidambaram V, M.E., Mechanical Engineering Faculty</strong>.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
